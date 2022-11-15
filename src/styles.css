@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lobster', cursive;
+  font-family: 'M PLUS', sans-serif;
+  color: #000;
+}
+html,body{
+  /* background-color: #010B1C; */
+  overflow-y: scroll;
+}
+.main{
+  height: 100％;
+  background-color: #f2efe6;
+  transition: margin-bottom .5s;
+  
+}
+.header{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+.info .img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-left: 50px;
+}
+.info .img img{
+  width: 133%;
+}
+.header-name{
+  text-align: right;
+  margin-right: 30px;
+}
+.header-name h4{
+  font-size: 14px;
+}
+.header-name p{
+  font-style: italic;
+  letter-spacing: 3px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #000;
+}
+.header-name p span{
+  background-color: chartreuse;
+}
+.info-text{
+  padding: 8px;
+  line-height: 30px;
+  color: #000;
+}
+.info-job{
+  margin: 50px 0 0 30px;
+ 
+}
+.job-text p{
+  font-size: 36px;
+  line-height: 16px;
+  color: #000;
+}
+.job-text-3 p:first-child{
+  padding-left: 25px;
+}
+.info-Porfo{
+  margin-top: 110px;
+  line-height: 10px;
+  text-align: right;
+}
+
+.info-Porfo p{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  transition: all 0.3s ease;
+  color: #000;
+}
+.info-Porfo a{
+  font-family: 'Times New Roman', Times, serif;
+  background-color: chartreuse;
+}
+.info-Porfo .p-hov:hover{
+  background-color: chartreuse;
+}
+
+
+.skill{
+  width: 100%;
+  height: 0;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  background-color: #111;
+  transition: 0.5s;
+  overflow-y: scroll;
+  /* padding-top: 60px;  */
+  
+}
+.skill h3,h5,li,p{
+  color: #FFF;
+  padding-bottom: 5px;
+}
+.skill h3{
+  margin-top: 10px;
+}
+.skill h5{
+  border-bottom: 1px solid #FFF;
+}
+
+.show-box{
+  background-color: #FFF;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.show-box ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.show-box ul li{
+  width: 250px;
+  height: 350px;
+  margin: 0px 5px 10px 5px; 
+  background-color: burlywood;
+  box-sizing: border-box;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+.li-img{
+  width: 250px;
+  height: 350px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* 圖片 */
+.li-img_1{background-image: url('img/01.png');}
+.li-img_2{background-image: url('img/02.png');}
+.li-img_3{background-image: url('img/03.png');}
+.li-img_4{background-image: url('img/04.png');}
+.li-img_5{background-image: url('img/05.png');}
+.li-img_6{background-image: url('img/06.png');}
+
+.li-text{
+  width: 250px;
+  height: 150px;
+  padding: 10px 0 0 10px;
+  position: absolute;
+  left: 0;
+  top: 320px;
+  transition: all 0.5s ease;
+  color: #111;
+}
+.li-text h5{
+  font-size: 14px;
+}
+.li-text h6{
+  font-size: 10px;
+}
+.show-box ul li:hover .li-text{
+  background-color: #f2efe6;
+  transform: translateY(-120px);
+  color: #000;
+}
+.show-box ul li:hover .li-text h5{
+ color: #000;
+}
+.li-text a{
+  display: block;
+  text-decoration: none;
+  width: 60px;
+  height: 30px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  border: 1px solid palevioletred;
+  color: #000;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.li-text a:hover{
+   color: #fff;
+   background-color: palevioletred;
+}
+
+.show-box ul li:nth-child(even){
+  margin-top: 25px;
+}
+
+/* footer 按鈕 */
+.footer{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.footer-btn{
+  width: 80px;
+  height: 80px;
+  background-color: palevioletred;
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, 
+  rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  cursor: pointer;
+}
+.footer-btn p{
+  text-align: center;
+  line-height: 80px;
+}
+.close-btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  transition: 0.5s;
+  background-color: #3c4dc7;
+}
